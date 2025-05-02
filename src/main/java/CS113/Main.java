@@ -1,15 +1,38 @@
 package CS113;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 
-        HeapsES<Integer> myQueue = new HeapsES<>();
-        for(int i = 10; i > 0; i--){
-            myQueue.add(i);
-        }
-        System.out.println(myQueue);
-        myQueue.poll();
-        System.out.println(myQueue);
+        GraphES graph = new GraphES();
+
+        graph.addNode("A");
+        graph.addNode("B");
+        graph.addNode("C");
+        graph.addNode("D");
+        graph.addEdge("A", "B", false);
+        graph.addEdge("B", "C", false);
+        graph.printGraph();
+
+//        ArrayListES<Integer> arrayToSort = new ArrayListES<>();
+//        Random random = new Random();
+//        for(int i = 0; i < 20; i++) {
+//            arrayToSort.add(random.nextInt(100));
+//        }
+//        System.out.println(arrayToSort);
+//
+//        SortingHat<Integer> sort = new SortingHat<>();
+//         arrayToSort = sort.quickSort(arrayToSort);
+//        System.out.println(arrayToSort);
+
+//        HeapsES<Integer> myQueue = new HeapsES<>();
+//        for(int i = 10; i > 0; i--){
+//            myQueue.add(i);
+//        }
+//        System.out.println(myQueue);
+//        myQueue.poll();
+//        System.out.println(myQueue);
 
 //        LinkedListES<Integer> list = new LinkedListES<>();
 //
@@ -31,5 +54,9 @@ public class Main {
 //        Integer temp = 6;
 //        list.remove(temp);
 //        System.out.println(list);
+
+
+
+
     }
 }

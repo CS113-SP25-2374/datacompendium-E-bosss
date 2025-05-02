@@ -1,5 +1,9 @@
 package CS113;
 
+import CS113.interfaces.IterableInterface;
+import CS113.interfaces.IteratorInterface;
+import CS113.interfaces.LinkedListInterface;
+
 public class LinkedListES <E> implements LinkedListInterface<E>, IterableInterface<E> {
 
     private class Node<E> {
@@ -12,7 +16,7 @@ public class LinkedListES <E> implements LinkedListInterface<E>, IterableInterfa
         }
     }
 
-    private class Iterator<E> implements IteratorInterface<E>{
+    private class Iterator<E> implements IteratorInterface<E> {
 
         LinkedListES<E>.Node<E> curr;
         LinkedListES<E> list;

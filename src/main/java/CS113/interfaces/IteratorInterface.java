@@ -1,4 +1,4 @@
-package CS113;
+package CS113.interfaces;
 
 public interface IteratorInterface<E> {
     /**

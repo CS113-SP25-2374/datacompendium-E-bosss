@@ -1,6 +1,6 @@
 package CS113;
 
-import java.util.Comparator;
+import CS113.interfaces.BinarySearchTree;
 
 public class BinarySearchTreeES <T extends Comparable<T>> implements BinarySearchTree<T> {
 

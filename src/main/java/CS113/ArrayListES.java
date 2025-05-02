@@ -1,8 +1,8 @@
 package CS113;
 
-import java.util.ArrayList;
+import CS113.interfaces.List;
 
-public class ArrayListES<E> implements List<E>{
+public class ArrayListES<E> implements List<E> {
     private E[] array;
     final static int DEFAULT_SIZE = 10;
     private int count;
@@ -24,10 +24,8 @@ public class ArrayListES<E> implements List<E>{
 
     @Override
     public boolean add(E element) {
-        if(array[array.length  - 1] != null) {
-            int length = array.length;
+        if(size() == array.length) {
             resize();
-            array[length] = element;
         }
 
         for(int i = 0; i < array.length; i++) {
