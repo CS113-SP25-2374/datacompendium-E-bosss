@@ -8,7 +8,7 @@ public class SortingHat <T extends Comparable<T>> {
         array.set(i, temp);
     }
 
-
+    //
     //bubble sort, iterates through the array swapping variables one place at a time
     //every run through the largest value should be at the end of the array
      void bubbleSort(ArrayListES<T> unsortedList) {
