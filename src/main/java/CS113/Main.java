@@ -8,27 +8,27 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayQueueES<String> dq = new ArrayQueueES<>();
+        ArrayQueueES<String> queue = new ArrayQueueES<>();
 
         //adding element to queue
-        dq.add("A");
-        dq.add("B");
-        dq.add("C");
-        dq.add("D");
-        dq.add("E");
+        queue.add("A");
+        queue.add("B");
+        queue.add("C");
+        queue.add("D");
+        queue.add("E");
 
-        System.out.println(dq);
+        System.out.println(queue);
 
-        //retrieving the element from the queue
-        System.out.println("First Element: " + dq.peek());
+//        retrieving the element from the queue
+        System.out.println("First Element: " + queue.peek());
 
         //removing an element from queue, always from the front
-        dq.remove();
-        System.out.println("Queue (Removed First Element): " + dq);
+        queue.remove();
+        System.out.println("Queue (Removed First Element): " + queue);
 
         //iterate through the queue
-        for (int i = 0; i < dq.size(); i++) {
-            System.out.println(dq.poll());
+        for (int i = 0; i < queue.size(); i++) {
+            System.out.println(queue.poll());
         }
 
 
