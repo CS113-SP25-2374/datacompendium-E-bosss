@@ -1,19 +1,49 @@
 package CS113;
 
+import CS113.interfaces.IteratorInterface;
+
+import java.util.Iterator;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
 
-        GraphES graph = new GraphES();
+        ArrayQueueES<String> dq = new ArrayQueueES<>();
 
-        graph.addNode("A");
-        graph.addNode("B");
-        graph.addNode("C");
-        graph.addNode("D");
-        graph.addEdge("A", "B", false);
-        graph.addEdge("B", "C", false);
-        graph.printGraph();
+        //adding element to queue
+        dq.add("A");
+        dq.add("B");
+        dq.add("C");
+        dq.add("D");
+        dq.add("E");
+
+        System.out.println(dq);
+
+        //retrieving the element from the queue
+        System.out.println("First Element: " + dq.peek());
+
+        //removing an element from queue, always from the front
+        dq.remove();
+        System.out.println("Queue (Removed First Element): " + dq);
+
+        //iterate through the queue
+        for (int i = 0; i < dq.size(); i++) {
+            System.out.println(dq.poll());
+        }
+
+
+
+
+
+//        GraphES graph = new GraphES();
+//
+//        graph.addNode("A");
+//        graph.addNode("B");
+//        graph.addNode("C");
+//        graph.addNode("D");
+//        graph.addEdge("A", "B", false);
+//        graph.addEdge("B", "C", false);
+//        graph.printGraph();
 
 //        ArrayListES<Integer> arrayToSort = new ArrayListES<>();
 //        Random random = new Random();
